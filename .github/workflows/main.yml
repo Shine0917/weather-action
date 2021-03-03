@@ -18,8 +18,8 @@ jobs:
     - name: 'Send mail'
       uses: dawidd6/action-send-mail@master
       with:
-      server_address: smtp.163.com
-      server_port: 465
+      server_address: https://email.163.com/
+      server_port: 443
       username: ${{ secrets.MAIL_USERNAME}}
       password: ${{ secrets.MAIL_PASSWORD}}
       subject: Shanghai weather Report (${{env.REPORT_DATE}})
