@@ -9,7 +9,7 @@ jobs:
   bot:
     runs-on: ubuntu-latest
     steps:
-     - name: 'Checkout codes' 
+    - name: 'Checkout codes' 
       user:actions/checkout@v1
     - name: 'Get Weather'
       run: bash ./weather.sh
